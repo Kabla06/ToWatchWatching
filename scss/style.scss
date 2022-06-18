@@ -7,6 +7,7 @@ main {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
     height: 100%;
+    background: linear-gradient(#9561f74f, #ffffff);
 }
 
 #main__title,
@@ -37,10 +38,73 @@ main {
     .main__nav__button {
         width: 150px;
         height: 100%;
+        border: 0px;
+        border-radius: 20px 0px 0px 20px;
         transition: 0.5s;
         background-color: rgba(43, 2, 119, 0.507);
         &:hover {
             background-color: rgba(132, 92, 206, 0.507);
         }
     }
+    .main__nav__button2 {
+        width: 150px;
+        height: 100%;
+        border: 0px;
+        border-radius: 0px 20px 20px 0px;
+        transition: 0.5s;
+        background-color: rgba(43, 2, 119, 0.507);
+        &:hover {
+            background-color: rgba(132, 92, 206, 0.507);
+        }
+    }
+}
+.main__nav__button,
+.main__nav__button2 {
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+}
+#first__section {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    &__div {
+        width: 600px;
+        height: 100px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+#second__section {
+    margin-top: 40px;
+    &__fieldset {
+        display: flex;
+        align-items: center;
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            li {
+                display: flex;
+                padding-bottom: 15px;
+                justify-content: flex-start;
+                align-items: flex-end;
+            }
+        }
+    }
+}
+label {
+    padding: 0 0 0 3rem;
+    justify-items: center;
+  }
+  
+input[type=checkbox] {
+    opacity: 1;
+    height: 20px;
+    width: 20px;
+  }
+#ReserveerButton1,
+#Wisbutton1 {
+    width: 100px;
+    height: 50px;
 }

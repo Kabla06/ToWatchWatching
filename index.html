@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
-  <body>
+  <body onload="load()">
     <main id="main__background">
       <header>
         <a href="../index.html" id="accueil">
@@ -26,14 +26,58 @@
         </a>
           <nav id="main__nav">
             <button class="main__nav__button" type="button"><strong>Anime</strong></button>
-            <button class="main__nav__button" type="button"><strong>Images</strong></button>
+            <button class="main__nav__button2" type="button"><strong>Images</strong></button>
           </nav>
       </header>
+      <section>
+        <section id="first__section">
+          <div id="first__section__div">
+            <p id="first__div__p">
+              Petit projet tranquille d'un site web dynamique permettant de voir des images et de créer tableaux de séries vues et pas encore vues.
+            </p>
+          </div>
+        </section>
+
+        <section id="second__section">
+          <fieldset id="second__section__fieldset">
+            <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+            <input type="button" id="Wisbutton1" value="delete" onclick="wis()"/>
+            <legend>To-Do-List</legend>
+            <ul>
+              <li>
+                <input type="checkbox" class="checkbox" id="reponse-1" name="reponse-1" />
+                <label for="reponse-1">Ossature HTML propre</label>
+              </li>
+              <li>
+                <input type="checkbox" class="checkbox" id="reponse-2" name="reponse-2" />
+                <label for="reponse-2">Style CSS</label>
+              </li>
+              <li>
+                <input type="checkbox" class="checkbox" id="reponse-3" name="reponse-3" />
+                <label for="reponse-3">Page d'accueil</label>
+              </li>
+              <li>
+                <input type="checkbox" class="checkbox" id="reponse-4" name="reponse-4" />
+                <label for="reponse-4">Créer un tableau (HTML)</label>
+              </li>
+              <li>
+                <input type="checkbox" class="checkbox" id="reponse-5" name="reponse-5" />
+                <label for="reponse-5">Styliser le tableau (CSS)</label>
+              </li>
+              <li>
+                <input type="checkbox" class="checkbox" id="reponse-6" name="reponse-6" />
+                <label for="reponse-6">Intégrer API pour images tableau et href="img"</label>
+              </li>
+            </ul>
+          </fieldset>
+        </section>
+      </section>
+
       <footer>
 
       </footer>
     </main>
-  <script src="/js/img.js"></script>
-  <script src="/js/index.js"></script>
+    <script src="../js/index.js"></script>
+  <script src="../js/img.js"></script>
   </body>
 </html>
