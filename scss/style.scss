@@ -28,6 +28,19 @@ main {
     background-color: rgb(235, 235, 235);
 }
 #main__nav {
-    position: relative;
-    top: 20px;
+    padding-top: 20px;
+    padding-right: 30px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    .main__nav__button {
+        width: 150px;
+        height: 100%;
+        transition: 0.5s;
+        background-color: rgba(43, 2, 119, 0.507);
+        &:hover {
+            background-color: rgba(132, 92, 206, 0.507);
+        }
+    }
 }
