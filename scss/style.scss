@@ -1,0 +1,33 @@
+html,
+body,
+main {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+#main__title,
+#accueil {
+  text-align: center;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 0;
+}
+#main__title {
+    color: black;
+    position: relative;
+    top: 10px;
+}
+#main__background {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+}
+#main__nav {
+    position: relative;
+    top: 20px;
+}
